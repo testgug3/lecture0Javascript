@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Variable 0</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+        if(true){
+            let message = 'Hello';
+        }
+        
+        //this will give error 
+        //saying message is not defined
+        //because let defined in the innermost curly braces 
+        //with let will be available only in that scope
+        alert(message)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

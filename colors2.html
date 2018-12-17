@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Colors 3</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+        /*
+        New way to define functions in a fat arrow way 
+        x => {
+            alert(x);
+        }
+
+        x => x*2;
+        */
+       //new es6 way to define function
+       //arrow way
+        document.addEventListener('DOMContentLoaded', () => {
+            document.querySelectorAll('.color-change').forEach(button => {
+                button.onclick = () => {
+                    document.querySelector('#hello').style.color = button.dataset.color;
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+        <h1 id="hello">Hello!</h1>
+        <button class="color-change" data-color="Red">Red</button>
+        <button class="color-change" data-color="Blue">Blue</button>
+        <button class="color-change" data-color="Green">Green</button>
+</body>
+</html>
