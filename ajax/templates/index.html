@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Currency Converter
+{% endblock %}
+
+{% block body %}
+    <h1>Book a flight</h1>
+
+    <form id="form">
+        <div class="form-group">
+            <input type="text" name="currency" id="currency" placeholder="Currency">
+            <input type="submit">
+        </div>
+    </form>
+    <div class="form-group" id="result">
+    </div>
+{% endblock %}

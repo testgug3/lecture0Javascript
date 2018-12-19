@@ -1,4 +1,6 @@
+.vscode/
+Include/
 Lib/
 Scripts/
 pyvenv.cfg
-
+__pycache__/
